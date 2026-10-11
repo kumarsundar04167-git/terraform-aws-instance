@@ -13,8 +13,8 @@ data "aws_ami" "joindevops" {
   }
 
   filter {
-    name   = "Source AMI Region"
-    values = ["us-east-1"]
+    name   = "architecture"
+    values = ["x86_64"]
   }
 }
 
