@@ -25,8 +25,8 @@ variable "instance_type" {
 }
 
 variable "ec2_tags" {
-    type = list
-    default = []
+    type = map
+    default = {}
 }
 
 variable "sg_tags" {
