@@ -8,8 +8,8 @@ data "aws_ami" "joindevops" {
   }
   
   filter {
-    name   = "Source AMI ID"
-    values = ["ami-0674b824b909308d3"]
+    name   = "virtualization-type"
+    values = ["hvm"]
   }
 
   filter {
